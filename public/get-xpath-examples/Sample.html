@@ -8,6 +8,117 @@
     </head>
     <body>
         <h1>Sample of XPath</h1>
+        <!-- One atribue section -->
+        <!--  -->
+        <section class="one-attribute-section">
+            <h2 class="section-title">Only one attribute</h2>
+                <div class="sample">
+                    <p id="First-example">This text has id attribute</p>
+                </div>
+
+                <div class="sample">
+                    <button class="Second-example" type="button">This button has specific class attribute</button>
+                </div>
+                
+                <div class="sample">
+                    <span name="Third-example">This text has name attribute</span>
+                </div>
+
+                <div class="sample">
+                    <input placeholder="This elemement has placeholder attribute" type="text">
+                </div>
+
+                <div class="sample">
+                    <p>Get text links to https://google.com</p>
+                    <a href="https://google.com">Youtube</a>
+                </div>
+
+                <div class="sample">
+                    <h3>Get required field in the below form</h3>
+                    <form id="Basic-info" action="">
+                        <span style="text-align: center">Basic information</span>
+                        <br>
+                        <div>
+                            <label for=""> Full name:</label>
+                            <input type="text" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for=""> Nick name:</label>
+                            <input type="text" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for=""> Age:</label>
+                            <input type="number">
+                        </div>
+                        <br>
+                        <div>
+                            <label for=""> Address:</label>
+                            <input type="text">
+                        </div>
+                        <br>
+                        <button style="display: block; margin: 0 auto;;" type="submit">Submit</button>
+                    </form>
+                </div>
+        </section>
+
+        <!-- Multi attribute section -->
+        <!--  -->
+        <section>
+            <h2>Multiple attributes</h2>
+            <!-- <div class="sample">
+                <select name="" id="Available-item">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div> -->
+
+            <p>Find address of employee with id 003</p>
+            <!-- Employee age list -->
+            <div id="employee-age-list" class="employee-list">
+                <p>Employee age</p>
+                <div class="employee-info" employee-id="001" >
+                    Name: Employee 1, Age: 20
+                </div>
+                <div class="employee-info" employee-id="002" >
+                    Name: Employee 2, Age: 21
+                </div>
+                <div class="employee-info" employee-id="002" >
+                    Name: Employee 3, Age: 22
+                </div>
+                <div class="employee-info" employee-id="003" >
+                    Name: Employee 4, Age: 23
+                </div>
+            </div>
+
+            <!-- Employee address list -->
+            <div id="employee-address" class="employee-list">
+                <p>Employee address</p>
+                <div class="employee-address" employee-id="001" >
+                    Name: Employee 1, Address: Ha Noi
+                </div>
+                <div class="employee-address" employee-id="002" >
+                    Name: Employee 2, Address: Da Nang
+                </div>
+                <div class="employee-address" employee-id="003" >
+                    Name: Employee 3, Address: Can Tho
+                </div>
+                <div class="employee-address" employee-id="004" >
+                    Name: Employee 4, Address: TP.HCM
+                </div>
+            </div>
+        </section>
+
+        <!-- Parent, child section -->
+        <section>
+            <h2>Parent, child path</h2>
+                <h3>Direct paths</h3>
+                <h3>Indirect paths</h3>
+        </section>
     </body>
     <footer>
 
