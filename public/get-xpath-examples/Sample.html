@@ -1,126 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <Title>Sample Xpath</Title>
 
-        <!-- resources -->
-        <link rel="stylesheet" href="./Sample.css"></link>
-    </head>
-    <body>
-        <h1>Sample of XPath</h1>
-        <!-- One atribue section -->
-        <!--  -->
-        <section class="one-attribute-section">
-            <h2 class="section-title">Only one attribute</h2>
-                <div class="sample">
-                    <p id="First-example">This text has id attribute</p>
-                </div>
+<head>
+  <title>Sample Xpath</title>
 
-                <div class="sample">
-                    <button class="Second-example" type="button">This button has specific class attribute</button>
-                </div>
-                
-                <div class="sample">
-                    <span name="Third-example">This text has name attribute</span>
-                </div>
+  <!-- resources -->
+  <link rel="stylesheet" href="./Sample.css" />
+</head>
 
-                <div class="sample">
-                    <input placeholder="This elemement has placeholder attribute" type="text">
-                </div>
+<body>
+  <h1>Sample of XPath</h1>
+  <!-- One atribue section -->
+  <!--  -->
+  <section class="one-attribute-section">
+    <h2 class="section-title">Only one attribute</h2>
+    <div class="sample">
+      <p id="First-example">This text has id attribute</p>
+    </div>
 
-                <div class="sample">
-                    <p>Get text links to https://google.com</p>
-                    <a href="https://google.com">Youtube</a>
-                </div>
+    <div class="sample">
+      <button class="Second-example" type="button">
+        This button has specific class attribute
+      </button>
+    </div>
 
-                <div class="sample">
-                    <h3>Get required field in the below form</h3>
-                    <form id="Basic-info" action="">
-                        <span style="text-align: center">Basic information</span>
-                        <br>
-                        <div>
-                            <label for=""> Full name:</label>
-                            <input type="text" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for=""> Nick name:</label>
-                            <input type="text" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for=""> Age:</label>
-                            <input type="number">
-                        </div>
-                        <br>
-                        <div>
-                            <label for=""> Address:</label>
-                            <input type="text">
-                        </div>
-                        <br>
-                        <button style="display: block; margin: 0 auto;;" type="submit">Submit</button>
-                    </form>
-                </div>
-        </section>
+    <div class="sample">
+      <span name="Third-example">This text has name attribute</span>
+    </div>
 
-        <!-- Multi attribute section -->
-        <!--  -->
-        <section>
-            <h2>Multiple attributes</h2>
-            <!-- <div class="sample">
-                <select name="" id="Available-item">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div> -->
+    <div class="sample">
+      <input placeholder="This elemement has placeholder attribute" type="text" />
+    </div>
 
-            <p>Find address of employee with id 003</p>
-            <!-- Employee age list -->
-            <div id="employee-age-list" class="employee-list">
-                <p>Employee age</p>
-                <div class="employee-info" employee-id="001" >
-                    Name: Employee 1, Age: 20
-                </div>
-                <div class="employee-info" employee-id="002" >
-                    Name: Employee 2, Age: 21
-                </div>
-                <div class="employee-info" employee-id="002" >
-                    Name: Employee 3, Age: 22
-                </div>
-                <div class="employee-info" employee-id="003" >
-                    Name: Employee 4, Age: 23
-                </div>
-            </div>
+    <div class="sample">
+      <p class="instruction">Get text links to https://google.com</p>
+      <a href="https://google.com" target="_blank">Youtube</a>
+    </div>
 
-            <!-- Employee address list -->
-            <div id="employee-address" class="employee-list">
-                <p>Employee address</p>
-                <div class="employee-address" employee-id="001" >
-                    Name: Employee 1, Address: Ha Noi
-                </div>
-                <div class="employee-address" employee-id="002" >
-                    Name: Employee 2, Address: Da Nang
-                </div>
-                <div class="employee-address" employee-id="003" >
-                    Name: Employee 3, Address: Can Tho
-                </div>
-                <div class="employee-address" employee-id="004" >
-                    Name: Employee 4, Address: TP.HCM
-                </div>
-            </div>
-        </section>
+    <div class="sample">
+      <h3>Get required fields in the below form</h3>
+      <form id="Basic-info" action="">
+        <span style="text-align: center">Basic information</span>
+        <br />
+        <div>
+          <label for=""> Full name:</label>
+          <input type="text" required />
+        </div>
+        <br />
+        <div>
+          <label for=""> Nick name:</label>
+          <input type="text" required />
+        </div>
+        <br />
+        <div>
+          <label for=""> Age:</label>
+          <input type="number" />
+        </div>
+        <br />
+        <div>
+          <label for=""> Address:</label>
+          <input type="text" />
+        </div>
+        <br />
+        <button style="display: block; margin: 0 auto" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
 
-        <!-- Parent, child section -->
-        <section>
-            <h2>Parent, child path</h2>
-                <h3>Direct paths</h3>
-                <h3>Indirect paths</h3>
-        </section>
-    </body>
-    <footer>
+    <div class="sample">
+      <div>
+        <p>Just random text</p>
+      </div>
+    </div>
+  </section>
 
-    </footer>
+  <!-- Multi attribute section -->
+  <!--  -->
+  <section>
+    <h2>Multiple attributes</h2>
+    <p class="instruction">Find address of employee with id 003</p>
+    <!-- Employee age list -->
+    <div id="employee-age-list" class="employee-list">
+      <p>Employee age</p>
+      <div class="employee-info" employee-id="001">
+        Name: Employee 1, Age: 20
+      </div>
+      <div class="employee-info" employee-id="002">
+        Name: Employee 2, Age: 21
+      </div>
+      <div class="employee-info" employee-id="002">
+        Name: Employee 3, Age: 22
+      </div>
+      <div class="employee-info" employee-id="003">
+        Name: Employee 4, Age: 23
+      </div>
+    </div>
+
+    <!-- Employee address list -->
+    <div id="employee-address" class="employee-list">
+      <p>Employee address</p>
+      <div class="employee-address" employee-id="001">
+        Name: Employee 1, Address: Ha Noi
+      </div>
+      <div class="employee-address" employee-id="002">
+        Name: Employee 2, Address: Da Nang
+      </div>
+      <div class="employee-address" employee-id="003">
+        Name: Employee 3, Address: Can Tho
+      </div>
+      <div class="employee-address" employee-id="004">
+        Name: Employee 4, Address: TP.HCM
+      </div>
+    </div>
+  </section>
+
+  <!-- Contain section -->
+  <!--  -->
+  <section id="contain">
+    <h2>Attribute contain</h2>
+    <!-- Example for attribute -->
+    <div class="example">
+      <p class="instruction">
+        Get all message errors which have id beginning with "error"
+      </p>
+      <span id="error-01" class="error">The entered username exited, please try another one.</span><br />
+      <span id="error-02" class="error">The entered password is too weak, please try again</span><br />
+      <span id="error-03" class="error">Confirm password is a required field.</span><br />
+      <span id="error-04" class="error">The entered email is used, please try another one</span><br />
+    </div>
+
+    <!-- Example for content -->
+    <div class="example">
+      <p class="instruction">Get the full text of welcome paragraph</p>
+      <p>Welcome text beginning: "Welcome you to"</p>
+    </div>
+  </section>
+
+  <!-- Parent, child section -->
+  <!--  -->
+  <section id="child-path-section">
+    <h2>Parent, child path</h2>
+    <!-- Example for direct child Xpath -->
+    <h3>Direct paths</h3>
+    <div class="sample">
+      <div>
+        <p>Get Xpath of this text first</p>
+        <div class="an-option">
+          <p>This is not the text we want</p>
+        </div>
+        <div class="an-option">
+          <p>This is the text we need to find</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="example">
+      <p class="instruction">Get the second browser in the list of options</p>
+      <select name="browsers" id="select-browser">
+        <option>Safari</option>
+        <option>Chrome</option>
+        <option>Edge</option>
+        <option>Firefox</option>
+        <option>Opera</option>
+        <option>Brave</option>
+      </select>
+    </div>
+
+    <!-- Example for indirect child path -->
+    <h3>Indirect paths</h3>
+    <div class="example">
+      <p class="instruction">Get the id of Employee 001</p>
+      <div class="employee-list">
+        <div class="employee-info">
+          <ul>
+            <li>Name: Employee 001</li>
+            <li>id: 1001</li>
+            <li>Age: 40</li>
+            <li>Gender: Male</li>
+          </ul>
+        </div>
+        <div class="employee-info">
+          <ul>
+            <li>Name: Employee 002</li>
+            <li>id: 1234</li>
+            <li>Age: 32</li>
+            <li>Gender: Female</li>
+          </ul>
+        </div>
+        <div class="employee-info">
+          <ul>
+            <li>Name: Employee 003</li>
+            <li>id: 1122</li>
+            <li>Age: 25</li>
+            <li>Gender: Male</li>
+          </ul>
+        </div>
+        <div class="employee-info">
+          <ul>
+            <li>Name: Employee 004</li>
+            <li>id: 0021</li>
+            <li>Age: 52</li>
+            <li>Gender: Female</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p>Welcome you to our website</p>
+</body>
+<footer>
+  <div>
+    <div id="author">
+      <span>By:William</span>
+    </div>
+    <div id="time">
+      <span>26th Sep 2022</span>
+    </div>
+    <div id="copyright">
+      <span>&#169 Money Forward</span>
+    </div>
+  </div>
+</footer>
+
 </html>

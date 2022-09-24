@@ -1,49 +1,90 @@
-*{
+* {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1{
-    text-align: center;
-    
+
+footer {
+    margin-top: 50px;
 }
 
-#Basic-info{
+footer div {
+    text-align: center;
+}
+
+footer div div {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    border: solid 1px black;
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+#Basic-info {
     border: solid black 1px;
 }
 
-form,form div{
+form,
+form div {
     display: inline-block;
     width: auto;
 }
 
-form span{
+form span {
     display: inline-block;
     width: 100%;
     text-align: center;
 }
 
-form div label{
+form div label {
     display: inline-block;
     min-width: 100px;
     padding-left: 10px;
 }
 
-.sample input{
-    min-width: 500px;
+.sample input {
+    min-width: 300px;
+    max-width: 40%;
     margin-right: 10px;
     margin-bottom: 5px;
 }
 
-.sample{
+.sample {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.employee-list{
+.employee-list {
     border: solid black 1px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 10px 10px 10px;
     width: 40%;
+    min-width: 200px;
     display: inline-block;
+}
+
+.sample>div>p {
+    color: red;
+}
+
+.instruction {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+}
+
+#child-path-section .employee-list .employee-info {
+    border: solid 1px black;
 }
