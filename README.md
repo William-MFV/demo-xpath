@@ -2,11 +2,15 @@
 
 ## Sample file to practice X-path
 
-The file is in path /public/get-xpath-examples/Sample.html
+The file is in path `/public/get-xpath-examples/Sample.html`
 
-## For the first time access
+## Sample file for iframe and Shadow DOM
 
-### Install npm
+The file is in path `/public/simple-landing-page/dist/index.html`
+
+## To open virtual DOM example
+
+### Install npm (for the first time only)
 
 Required: Nodejs
 
