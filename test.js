@@ -5,3 +5,4 @@ const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 
 // Get current month (0-11)
+update;
