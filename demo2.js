@@ -1,4 +1,4 @@
-// Get current date and time
+//get current date and time
 const currentDate = new Date();
 
 // Get current year
